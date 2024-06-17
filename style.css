@@ -1,0 +1,96 @@
+/* Reset default browser styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Monument section styling */
+.monument {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+    background-color:brown;
+	color:white;
+}
+
+.monument img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.info {
+    max-width: 500px;
+}
+
+.info h2 {
+    margin-bottom: 1rem;
+}
+
+.info p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .monument {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .monument img {
+        margin: 0 0 1rem 0;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+}
